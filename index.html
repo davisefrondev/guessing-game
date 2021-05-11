@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="UTF-8">
+
+    <title>Guessing Game</title> 
+
+    <link rel="stylesheet" href="main.css">
+     
+  </head>
+
+  <body>
+   
+    <h2 class='header'>GUESSING GAME</h2>
+    <!--main Title with class header this should stay as is-->
+
+    <h3 class="header3" id='title'>Pick a number between 1-100</h3>
+    <!--second title, should change when user inputs guess to either ice cold, cold, warm, burning hot-->
+    <h4 class = "header4" id="subtitle"> Good Luck</h4>
+
+    <div class = 'center'>
+       <input class ="inputbox" type='text' placeholder="GUESS HERE" id='players-input'> </input>
+       <!--input box this should store all user guesses class is inputbox-->
+
+       <p>&nbsp;&nbsp;</p>
+      
+    <button type="button"id='submit'>SUBMIT</button>
+    <!-- submit button, should send input box values into storage type is button-->
+    <button onClick="window.location.reload();" type="button" id='reset'>RESET</button>
+  
+   <h2 class='header2'>Previous Guesses</h2>
+   <!-- This should stay as is class is header 2-->
+      
+   <ul class='guesses' style = 'list-style:none' id ='guess-list'>
+    <!--class is guesses, should be invisible until a guess is made, then each guess is visible-->
+
+      <li class = 'guess'>-</li>
+      <li class = 'guess'>-</li>
+      <li class = 'guess'>-</li>
+      <li class = 'guess'>-</li>
+      <li class = 'guess'>-</li>
+
+    </ul>
+    
+ 
+    
+ <p class="credit" style="text-align: right;"> Made by Davis Efron</p>
+     <script src='js/guessing-game.js'></script>
+     
+  </body>
+
+</html>
